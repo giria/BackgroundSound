@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A7CA4111AB0D20400959513 /* glass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CA4101AB0D20400959513 /* glass.mp3 */; };
+		8A7CA4131AB17CE300959513 /* Ioputarl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8A7CA4121AB17CE300959513 /* Ioputarl.wav */; };
 		8ABB3ED51AB0C0FE001A41D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB3ED41AB0C0FE001A41D7 /* main.m */; };
 		8ABB3ED81AB0C0FE001A41D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB3ED71AB0C0FE001A41D7 /* AppDelegate.m */; };
 		8ABB3EDB1AB0C0FE001A41D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB3EDA1AB0C0FE001A41D7 /* ViewController.m */; };
@@ -14,6 +16,7 @@
 		8ABB3EE01AB0C0FE001A41D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB3EDF1AB0C0FE001A41D7 /* Images.xcassets */; };
 		8ABB3EE31AB0C0FE001A41D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB3EE11AB0C0FE001A41D7 /* LaunchScreen.xib */; };
 		8ABB3EEF1AB0C0FF001A41D7 /* BackgroundSoundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB3EEE1AB0C0FF001A41D7 /* BackgroundSoundTests.m */; };
+		8ABB3EF91AB0C2B1001A41D7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABB3EF81AB0C2B1001A41D7 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A7CA4101AB0D20400959513 /* glass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = glass.mp3; sourceTree = "<group>"; };
+		8A7CA4121AB17CE300959513 /* Ioputarl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ioputarl.wav; sourceTree = "<group>"; };
 		8ABB3ECF1AB0C0FE001A41D7 /* BackgroundSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABB3ED31AB0C0FE001A41D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ABB3ED41AB0C0FE001A41D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		8ABB3EE81AB0C0FF001A41D7 /* BackgroundSoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundSoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABB3EED1AB0C0FF001A41D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ABB3EEE1AB0C0FF001A41D7 /* BackgroundSoundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundSoundTests.m; sourceTree = "<group>"; };
+		8ABB3EF81AB0C2B1001A41D7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABB3EF91AB0C2B1001A41D7 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,9 @@
 		8ABB3EC61AB0C0FE001A41D7 = {
 			isa = PBXGroup;
 			children = (
+				8A7CA4101AB0D20400959513 /* glass.mp3 */,
+				8A7CA4121AB17CE300959513 /* Ioputarl.wav */,
+				8ABB3EF81AB0C2B1001A41D7 /* AVFoundation.framework */,
 				8ABB3ED11AB0C0FE001A41D7 /* BackgroundSound */,
 				8ABB3EEB1AB0C0FF001A41D7 /* BackgroundSoundTests */,
 				8ABB3ED01AB0C0FE001A41D7 /* Products */,
@@ -200,7 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ABB3EDE1AB0C0FE001A41D7 /* Main.storyboard in Resources */,
+				8A7CA4111AB0D20400959513 /* glass.mp3 in Resources */,
 				8ABB3EE31AB0C0FE001A41D7 /* LaunchScreen.xib in Resources */,
+				8A7CA4131AB17CE300959513 /* Ioputarl.wav in Resources */,
 				8ABB3EE01AB0C0FE001A41D7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +424,7 @@
 				8ABB3EF41AB0C0FF001A41D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ABB3EF51AB0C0FF001A41D7 /* Build configuration list for PBXNativeTarget "BackgroundSoundTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				8ABB3EF71AB0C0FF001A41D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AppDelegate ()
 
@@ -17,8 +18,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
-}
+    
+    // Configure the audio system
+    AudioSessionInitialize(NULL,NULL,NULL,NULL);
+    
+    OSStatus activationResult = 0;
+    activationResult          = AudioSessionSetActive(true);
+    
+    UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+    
+    AudioSessionSetProperty
+    (
+     kAudioSessionProperty_AudioCategory,
+     sizeof(sessionCategory),
+     &sessionCategory
+     );
+    
+    OSStatus propertySetError = 0;
+    UInt32 allowMixing        = true;
+    
+    propertySetError = AudioSessionSetProperty
+    (
+     kAudioSessionProperty_OverrideCategoryMixWithOthers,
+     sizeof(allowMixing),
+     &allowMixing
+     );
+    return  YES;
+    
+   }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
