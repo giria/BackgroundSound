@@ -1,12 +1,20 @@
 # BackgroundSound
 
-First we have to go to the Capabilities tab of the project and select the  *Audio and Airplay* checkbox.
+
+The goal of this project is to play a sound with AVFoundation that does not stop when we start the music Apple application. The two sounds will pa
+play togheter.
+
+In order to accomplish this we need:
+
+
+
+1)First we have to go to the Capabilities tab of the project and select the  *Audio and Airplay* checkbox.
 
 ![GitHub Logo](BackgroundModes.png)
 
 
 
-Then, before playing the sound we have to setup the mode:
+2) Then, before playing the sound we have to setup the mode:
 
 
 ```
