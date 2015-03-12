@@ -34,7 +34,7 @@ Then, before playing the sound we have to setup the mode:
      sizeof(allowMixing),
      &allowMixing
      );
-     ```
+```
 
 
 
