@@ -1,7 +1,7 @@
 # BackgroundSound
 
 
-The goal of this project is to play a sound with AVFoundation that does not stop when we start the music Apple application. The two sounds will pa
+The goal of this project is to play a sound with AVFoundation that does not stop when we start the music Apple application. The two sounds will 
 play togheter.
 
 In order to accomplish this we need:
